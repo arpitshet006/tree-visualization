@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Tree Visualizer</title>
+</head>
+<body>
+
+<header>
+  <div id="title">Tree Visualizer</div>
+  <label for="array-input">Enter an array (comma-separated):</label><br />
+  <input type="text" id="array-input" name="array" placeholder="e.g. 5, 3, 8, 1, 4" title="Enter an array of numbers separated by commas" />
+  <div id="options">
+    <button onclick="treeAndArray()">Visualize Binary Tree</button>
+    <button onclick="heapify()">Visualize Max-Heap</button>
+    <button onclick="createBinarySearchTree()">Visualize Binary Search Tree</button>
+  </div>
+</header>
+
+<div id="blurb">
+  <div id="visual-title"></div>
+  <div id="instructions"></div>
+</div>
+<div id="binary-tree"></div>
+<div id="array-visual"></div>
+
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="app.js"></script>
+<script src="nodes.js"></script>
+<script src="heap.js"></script>
+
+</body>
+</html>
